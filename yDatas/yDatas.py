@@ -11,7 +11,7 @@ def ydatas():
         "TUPRS.IS", "VAKBN.IS", "YKBNK.IS", "BRSAN.IS", "ALARK.IS"
     ]
 
-    output_folder = "Raw"
+    output_folder = "yDatas/Raw"
     os.makedirs(output_folder, exist_ok=True)
 
     downloaded = []

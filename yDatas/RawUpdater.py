@@ -15,8 +15,8 @@ bist30_symbols = [
 today = datetime.now().date()
 
 def updater():
-    raw_folder = "Raw"
-    output_folder = "RawUpdates"
+    raw_folder = "yDatas/Raw"
+    output_folder = "yDatas/RawUpdates"
     os.makedirs(output_folder, exist_ok=True)
     
     downloaded = []
@@ -58,8 +58,8 @@ def updater():
         print(f"Hata oluşanlar: {', '.join(failed)}")
 
 def merger():
-    raw_folder = "Raw"
-    update_folder = "RawUpdates"
+    raw_folder = "yDatas/Raw"
+    update_folder = "yDatas/RawUpdates"
 
     for filename in os.listdir(update_folder):
         if filename.endswith(".csv"):
